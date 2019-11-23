@@ -7,8 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
-  constructor() { }
+  nav: string[];
 
+  constructor() {
+    this.nav =  ['Home', 'About', 'Heroes'];
+  }
   ngOnInit() {
   }
 
