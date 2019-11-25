@@ -1,6 +1,6 @@
-<h1 class="text-center mb-3">Heores de Marvel y Dc Comics</h1>
+<h1 class="text-center mb-3 animated fadeIn">Heores de Marvel y Dc Comics</h1>
 
-<div class="card-columns animate fadeIn fast">
+<div class="card-columns animated fadeIn fast">
 
   <div *ngFor="let heroe of heroes; let i = index" class="card testimonial-card">
     <div class="card-up indigo lighten-1"></div>
@@ -12,8 +12,7 @@
       <hr>
       <p><i class="fas fa-quote-left"></i>{{ heroe.bio }}</p>
       <small>{{ heroe.aparicion }}</small>
-      <button type="button" class="btn btn-outline-primary btn-md float-right">Read more</button>
-      <a [routerLink]="['/Heroe/',i]" class="btn btn-primary">ver más</a>
+      <a [routerLink]="['/Heroe/',i]" class="btn btn-primary btn-block mt-3">Read more</a>
     </div>
   </div>
 
